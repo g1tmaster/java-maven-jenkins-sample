@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         maven "Maven3"
-        jdk "JDK17"
+        jdk "JDK25"
     }
 
     stages {
@@ -11,7 +11,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: 'github-credentials',
-                    url: 'https://github.com/Saurabhjava/java-maven-jenkins-sample.git'
+                    url: 'https://github.com/g1tmaster/java-maven-jenkins-sample.git'
             }
         }
 
